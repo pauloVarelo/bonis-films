@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bonis Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Italiana&family=Hanken+Grotesk:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Playfair+Display:ital@0;1&family=Bodoni+Moda:ital@0;1&family=DM+Serif+Display:ital@0;1&family=Fraunces:ital@0;1&family=Marcellus&family=Pinyon+Script&family=Syne:wght@500;600&family=DM+Sans:wght@400;500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200..700;1,9..40,200..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/studio.css">
+</head>
+<body>
+<div class="app">
+  <nav class="side" aria-label="Bonis Studio">
+    <div class="brand"><span class="blogo" style="color:#F6F1E8"><span class="lw"><b>bonıs.</b><i>films</i></span><small>studio</small></span></div>
+    <button class="nv" type="button" data-go="painel"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg>Painel</button>
+    <button class="nv" type="button" data-go="producao"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="5" height="16" rx="1.5"/><rect x="10" y="4" width="5" height="11" rx="1.5"/><rect x="17" y="4" width="4" height="7" rx="1.5"/></svg>Produção<span class="ct" id="ctProd"></span></button>
+    <button class="nv" type="button" data-go="clientes"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 14.5c3 0 6 1.8 6 5"/></svg>Clientes<span class="ct" id="ctCli"></span></button>
+    <div class="grp">Galerias</div>
+    <button class="nv" type="button" data-go="editor"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></svg>Editor de galeria</button>
+    <button class="nv" type="button" data-go="templates"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><path d="M17 13v8M13 17h8"/></svg>Templates<span class="ct" id="ctTpl"></span></button>
+    <div class="savest" id="saveState" role="status"><i></i><span>Tudo salvo</span></div>
+    <div class="who"><span class="avatar">G</span><div><div>Gabi e João</div><small>Administradores</small></div></div>
+    <button class="reset" type="button" id="resetDemo">Restaurar dados de demonstração</button>
+  </nav>
+  <main id="view"></main>
+</div>
+
+<div class="modal" id="modal" hidden><div class="mbox" id="mbox" role="dialog" aria-modal="true"></div></div>
+<div class="guest" id="guest" role="dialog" aria-label="Visualização como convidado" hidden>
+  <div class="guest-bar"><span id="guestNote"></span><button class="btn sm" type="button" id="closeGuest">Fechar visualização</button></div>
+  <div id="guestBody"></div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/studio.js"></script>
+</body>
+</html>

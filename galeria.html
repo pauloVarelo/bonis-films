@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mariana & Rafael · Minha história · Bonis Films</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200..700;1,9..40,200..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/galeria.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Bonis Films, wedding filmmaking"><span class="lw"><b>bonıs.</b><i>films</i></span><small>wedding filmmaking</small></a>
+    <span class="kick" style="color:var(--muted)">Minha história</span>
+    <div class="row" style="display:flex;gap:10px;flex-wrap:wrap">
+      <button class="btn sm" type="button" id="openShare" aria-expanded="false" aria-controls="share">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>Compartilhar</button>
+      <a class="btn sm solid" href="#downloads"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Guardar memórias</a>
+    </div>
+  </div>
+</header>
+
+<div class="share" id="share" role="dialog" aria-labelledby="shareTitle" hidden>
+  <div class="share-head"><h2 id="shareTitle">Compartilhar a história</h2><button class="icon-btn" type="button" id="closeShare" aria-label="Fechar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <p>Convidados acessam pelo link privado. Seus dados de conta nunca aparecem para eles.</p>
+  <label for="shareLink">Link privado</label>
+  <div class="copy-row"><input id="shareLink" type="text" readonly value="bonisfilms.com.br/e/mariana-e-rafael"><button type="button" id="copyBtn">Copiar</button></div>
+  <button class="switch-row" type="button" role="switch" aria-checked="true" id="guestSwitch"><span>Convidados podem baixar fotos</span><span class="track" aria-hidden="true"></span></button>
+  <div class="line-row"><span>Senha para convidados</span><span>Opcional</span></div>
+  <a class="btn solid" id="waLink" href="#" target="_blank" rel="noopener">Enviar pelo WhatsApp</a>
+</div>
+
+<main>
+  <section class="g-hero" style="padding-top:34px"><div class="wrap">
+    <span class="kick">O nosso grande dia · 12.09.2026</span>
+    <h1 class="giant g-title">Mariana<br><span class="lt">&amp;</span> Rafael</h1>
+    <div class="g-cover"><img src="img/proposito.jpg" alt="Mariana e Rafael sorrindo, rosto com rosto"></div>
+    <p class="g-place">[Local do casamento] · Um filme Bonis Films por Gabi e João</p>
+  </div></section>
+
+  <nav class="chapters" aria-label="Capítulos"><div class="wrap">
+    <a href="#filme"><b>01</b> O filme</a><a href="#momentos"><b>02</b> Teaser e cerimônia</a><a href="#fotografias"><b>03</b> Fotografias</a><a href="#mensagem"><b>04</b> Mensagem</a><a href="#downloads"><b>05</b> Downloads</a>
+  </div></nav>
+
+  <section id="filme"><div class="wrap">
+    <div class="sec-head"><div><span class="kick">Capítulo 01</span><h2 class="giant sm">O nosso filme</h2></div><span class="muted">Wedding film · [duração]</span></div>
+    <div class="player">
+      <img src="img/abraco.jpg" alt="Capa do filme: os noivos abraçados no altar">
+      <button class="play" type="button" id="playBtn" aria-label="Assistir ao filme"><svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></button>
+      <div class="bar"><span>00:00</span><div class="progress"></div><span>[duração]</span><span class="pill">Original disponível</span></div>
+    </div>
+  </div></section>
+
+  <section id="momentos"><div class="wrap">
+    <div class="sec-head"><div><span class="kick">Capítulo 02</span><h2 class="giant sm">Outros momentos</h2></div></div>
+    <div class="two">
+      <a class="clip" href="#filme"><div class="ci"><img src="img/testemunho.jpg" alt="Os noivos com as testas encostadas"><span class="mini-play"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span></div><div class="cm"><b>Teaser</b><span>até 1 min · Reels</span></div></a>
+      <a class="clip" href="#filme"><div class="ci"><img src="img/altar.jpg" alt="Os noivos diante do altar"><span class="mini-play"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span></div><div class="cm"><b>Cerimônia completa</b><span>na íntegra</span></div></a>
+    </div>
+  </div></section>
+
+  <section id="fotografias"><div class="wrap">
+    <div class="sec-head">
+      <div><span class="kick">Capítulo 03</span><h2 class="giant sm">Nossas memórias</h2><span class="muted" id="photoCount">8 frames</span></div>
+      <div class="filters" role="group" aria-label="Filtrar">
+        <button type="button" data-filter="Todas" aria-pressed="true">Todas</button><button type="button" data-filter="Cerimônia" aria-pressed="false">Cerimônia</button><button type="button" data-filter="Detalhes" aria-pressed="false">Detalhes</button><button type="button" data-filter="Festa" aria-pressed="false">Festa</button>
+      </div>
+    </div>
+    <div class="pgrid" id="grid">
+      <figure data-cat="Cerimônia" tabindex="0"><img src="img/abraco.jpg" alt="Os noivos abraçados no altar"><figcaption>Cerimônia</figcaption></figure>
+      <figure data-cat="Detalhes" tabindex="0"><img src="img/arco.jpg" alt="A noiva de costas diante de um arco de vitrais"><figcaption>Detalhes</figcaption></figure>
+      <figure data-cat="Cerimônia" tabindex="0"><img src="img/altar.jpg" alt="Os noivos lado a lado"><figcaption>Cerimônia</figcaption></figure>
+      <figure data-cat="Detalhes" tabindex="0"><img src="img/maos.jpg" alt="A mão do noivo na cintura da noiva"><figcaption>Detalhes</figcaption></figure>
+      <figure data-cat="Festa" tabindex="0"><img src="img/baloes.jpg" alt="Os noivos sorrindo entre balões"><figcaption>Festa</figcaption></figure>
+      <figure data-cat="Detalhes" tabindex="0"><img src="img/bouquet.jpg" alt="O buquê apoiado sobre o altar"><figcaption>Detalhes</figcaption></figure>
+      <figure data-cat="Festa" tabindex="0"><img src="img/testemunho.jpg" alt="Os noivos com as testas encostadas"><figcaption>Festa</figcaption></figure>
+      <figure data-cat="Detalhes" tabindex="0"><img src="img/castelo.jpg" alt="Vista aérea do local do casamento"><figcaption>Drone</figcaption></figure>
+    </div>
+  </div></section>
+
+  <section id="mensagem"><div class="wrap">
+    <div class="msg">
+      <span class="kick">Capítulo 04 · Uma mensagem para vocês</span>
+      <blockquote>“Não registramos apenas um evento, mas aquilo que foi vivido. Obrigado por nos deixarem contar a história de vocês.”</blockquote>
+      <span class="sign">Gabi e João · bonıs.<i>films</i></span>
+    </div>
+  </div></section>
+
+  <section id="downloads"><div class="wrap">
+    <div class="sec-head"><div><span class="kick">Capítulo 05</span><h2 class="giant sm">Guardar memórias</h2></div><a class="btn solid" href="#downloads" data-dl="Tudo (.zip)">Baixar tudo (.zip)</a></div>
+    <div class="dl">
+      <div class="file"><span class="chev">›</span><div><b>Wedding film</b><span>Arquivo original · [formato] · [tamanho]</span></div><button class="btn sm" type="button" data-dl="Wedding film">Baixar</button></div>
+      <div class="file"><span class="chev">›</span><div><b>Teaser</b><span>Arquivo original · [formato] · [tamanho]</span></div><button class="btn sm" type="button" data-dl="Teaser">Baixar</button></div>
+      <div class="file"><span class="chev">›</span><div><b>Cerimônia completa</b><span>Arquivo original · [formato] · [tamanho]</span></div><button class="btn sm" type="button" data-dl="Cerimônia completa">Baixar</button></div>
+      <div class="file"><span class="chev">›</span><div><b>Fotografias</b><span>Pacote .zip em alta resolução</span></div><button class="btn sm" type="button" data-dl="Fotografias">Baixar</button></div>
+      <p class="note">Disponível até [data de arquivamento]. Depois disso, peça a reativação à Bonis Films.</p>
+    </div>
+  </div></section>
+  <div style="height:90px"></div>
+</main>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Foto ampliada" hidden><button class="icon-btn" type="button" id="closeLightbox" aria-label="Fechar"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button><img id="lightboxImg" src="" alt=""></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/galeria.js"></script>
+</body>
+</html>
